@@ -1,0 +1,463 @@
+@charset "UTF-8";
+/* -------------------
+  全体スタイル
+------------------- */
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Noto Serif JP', 'Noto Serif', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  letter-spacing: .1rem;
+}
+
+body.open{
+  overflow: hidden;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+.wrapper{
+  padding: 0 120px;
+}
+
+.inner{
+  padding: 0 100px;
+}
+
+.title{
+  font-size: 4rem;
+}
+
+.sub-title{
+  font-size: 1.6rem;
+}
+
+.font-white{
+  color: #fff;
+}
+
+section{
+  margin-top: 80px;
+  padding: 80px 0;
+}
+
+.sec-title{
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.sec-title::after{
+  display: inline-block;
+  content: "";
+  height: 4px;
+  width: 200px;
+  background: #333;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+.sec-title.font-white::after{
+  display: inline-block;
+  content: "";
+  height: 4px;
+  width: 200px;
+  background: #fff;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+.sec-sub-title{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.6rem;
+}
+
+.back-title{
+  font-size: 3.6rem;
+  opacity: 0.1;
+}
+
+.back-title.black{
+  color: #171717;
+}
+
+.back-title.white{
+  color: #fff;
+}
+
+.title-right{
+  text-align: right;
+  justify-content: right;
+}
+
+/* -------------------
+  ヘッダー
+------------------- */
+.header-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-area.black{
+  background-color: #282F35;
+  transition: .3s;
+}
+
+.header-logo{
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+}
+
+.header-logo:hover{
+  opacity: .8;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu li{
+  margin-right: 24px;
+}
+
+.menu li:last-child{
+  margin-right: 0;
+}
+
+.menu-list{
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+  display: block;
+}
+
+.menu-list:hover{
+  opacity: .8;
+}
+
+.burger{
+  display: none;
+}
+
+.layer{
+  display: none;
+}
+ /* -------------------
+    メイン
+  ------------------- */
+.mainvisual{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-title{
+  position: absolute;
+  padding: 0 120px;
+  top: 55%;
+  z-index: 1;
+}
+
+.slick-slider{
+  visibility: hidden;
+  height: 100%;
+}
+
+.slick-slider.slick-initialized{
+  visibility: visible;
+}
+
+.slick-slider div{
+  height: 100%;
+}
+
+.slick-slider img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slick-arrow{
+  display: none !important;
+}
+
+/* ------------------------
+  Concept
+------------------------ */
+.info-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.dlt-text{
+  width: 45%;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.dlt-img{
+  width: 45%;
+}
+
+/* ------------------------
+  Works
+------------------------ */
+.works-area{
+  background-image: url('../images/works-bgi@2x.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.works-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-list li{
+  width: calc(100% / 3 - 8px);
+  background-color: #fff;
+}
+
+.work-text{
+  padding: 16px;
+  font-size: .8rem;
+}
+
+.more-bnt{
+  display: block;
+  width: 240px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  background-color: #F7D43F;
+  padding: 16px 52px;
+  border-radius: 30px;
+  margin:  40px auto;
+}
+
+/* ------------------------
+  Service
+------------------------ */
+.service-list{
+  display: flex;
+}
+
+.service-list li{
+  width: calc(100% /3);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.service-list li:nth-of-type(1){
+  background-image: url('../images/service-img01@2x.jpg');
+}
+
+.service-list li:nth-of-type(2){
+  background-image: url('../images/service-img02@2x.jpg');
+}
+
+.service-list li:nth-of-type(3){
+  background-image: url('../images/sevice-img03@2x.jpg');
+}
+
+.service-text{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 320px;
+}
+
+.service-text:hover{
+  background-color: rgba(40,47,53,.7);
+  transition: .3s;
+}
+
+/* ------------------------
+  Contact
+------------------------ */
+.contant-area{
+  background-image: url('../images/contact-bgi@2x.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.con-msg{
+  text-align: center;
+}
+
+/* ------------------------
+  footer
+------------------------ */
+footer{
+  text-align: center;
+}
+
+footer p{
+  font-size: .8rem;
+  line-height: 80px;
+}
+
+/* ------------------------
+  画面サイズ900px以下の場合
+------------------------ */
+@media screen and (max-width:900px){
+
+  .wrapper{
+    padding: 0 4vw;
+  }
+
+  .inner{
+    padding: 0;
+  }
+
+  /* -------------------
+    ヘッダー
+  ------------------- */
+  .menu{
+    display: none;
+  }
+
+  .burger{
+    display: block;
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    cursor: pointer;
+    top: 8px;
+    right: 4vw;
+    z-index: 4;
+  }
+
+  .burger span{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transition: all .3s;
+  }
+
+  .burger span:first-child{
+    top: 30%;
+  }
+
+  .burger span:last-child{
+    top: 70%;
+  }
+
+  .burger.open span:nth-of-type(1){
+    transform: rotate(45deg) translateY(12px);
+  }
+
+  .burger.open span:nth-of-type(2){
+    display: none;
+  }
+
+  .burger.open span:nth-of-type(3){
+    transform: rotate(-45deg) translateY(-12px);
+  }
+
+
+  .layer.open{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #282F35;
+    z-index: 3;
+  }
+
+  .layer.open ul{
+    display: block;
+    margin-top: 160px;
+    text-align: center; 
+  }
+
+  .layer.open li{
+    margin-bottom: 24px;
+  }
+
+  .layer.open a{
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+ /* -------------------
+    メイン
+  ------------------- */
+  .main-title{
+    padding: 0 4vw;
+    top: 30%;
+  }
+
+  /* ------------------------
+    Concept
+  ------------------------ */
+  .info-area{
+    flex-direction: column;
+  }
+
+  .dlt-text{
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .dlt-img{
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  /* ------------------------
+    Works
+  ------------------------ */
+  .works-list{
+    flex-direction: column;
+  }
+
+  .works-list li{
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  /* ------------------------
+    Service
+  ------------------------ */
+  .service-list{
+    flex-direction: column;
+  }
+
+  .service-list li{
+    width: 100%;
+    margin-top: 24px;
+  }
+}
