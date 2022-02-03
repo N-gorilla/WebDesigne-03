@@ -103,6 +103,14 @@ section{
   justify-content: right;
 }
 
+.title-center{
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #fff;
+  line-height: 300px;
+}
+
 /* -------------------
   ヘッダー
 ------------------- */
@@ -254,6 +262,7 @@ section{
   padding: 16px 52px;
   border-radius: 30px;
   margin:  40px auto;
+  box-shadow: 0 0 8px #333;
 }
 
 /* ------------------------
@@ -319,6 +328,36 @@ footer{
 footer p{
   font-size: .8rem;
   line-height: 80px;
+}
+
+/* ------------------------
+  contactページ
+------------------------ */
+.contact-visual{
+  height: 420px;
+  background-image: url('../images/contact-page-bgi@2x.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 4vw;
+}
+
+.contact-form{
+  margin: 0 auto;
+  width: 55%;
+}
+
+.check-are{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-title{
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.form-content{
+  border: 1px solid #333;
 }
 
 /* ------------------------
@@ -459,5 +498,18 @@ footer p{
   .service-list li{
     width: 100%;
     margin-top: 24px;
+  }
+
+  /* ------------------------
+    contactページ
+  ------------------------ */
+  .check-are{
+    flex-direction: column;
+  }
+
+  .contact-form{
+    margin: 0 auto;
+    padding: 0 4vw;
+    width: 100%;
   }
 }

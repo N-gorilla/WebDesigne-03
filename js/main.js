@@ -18,6 +18,8 @@ $(function(){
   });
 })
 
+
+
 //スライダー
 $(function(){
   $('.slick-slider').slick({
